@@ -22,12 +22,12 @@ e=np.ones((3,4,5),dtype=int)
 print(e)
 print('số chiều: '+ str(e.ndim))
 print ("next")
-#tạo mảng với các phần tử từ 1-19 với bước nhảy cách nhau là 3
+#Tạo mảng với các phần tử từ 1-19 với bước nhảy cách nhau là 3
 f=np.arange(1,20,3)
 print(f)
 print('số chiều: '+ str(f.ndim))
 print ("next")
-#tạo mảng 2 chiều với các phần tử bằng 9 kích thước 2x3
+#Tạo mảng 2 chiều với các phần tử bằng 9 kích thước 2x3
 g=np.full((2,3),9)
 print(g)
 print(g.ndim)#Số chiều của mảng
@@ -35,7 +35,7 @@ print(g.shape)#Kích thước của mảng
 print(g.size)#Số phần tử trong mảng
 print(g.dtype)#Kiểu dữ liệu của phần tử trong mảng
 print ("next")
-#tạo ma trận đơn vị với kích thước là 6x6
+#Tạo ma trận đơn vị với kích thước là 6x6
 r=np.eye(6,dtype=int)
 print(r)
 print(r.ndim)
