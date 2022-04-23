@@ -44,4 +44,11 @@ print(Z)
 print("\n")
 print("Tong Z: ", np.sum(Z))
 '''
-
+import numpy as np
+A = np.array([1, 2, 3])
+B = np.array([4, 5, 6])
+TVH = 0
+#vector A = (a1, a2, a3) vector B =(b1, b2, b3), TVH = a1*b1+a2*b2+b3*b3
+for i in range(0, A.size, 1):
+    TVH += A[i]*B[i]
+print("Tich vo huong", TVH)

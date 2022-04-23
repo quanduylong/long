@@ -65,9 +65,7 @@ o=np.array([[1,2,3],[4,5,6],[7,8,9]])
 print(np.diag(o))
 print ("next")
 #Ma trận chuyển vị
-i=np.array([[2,5,6],[5,6,8],[6,1,8]])
-print(np.diag(i))
-print(i[2][2])
+i=np.array([[2,5,1],[7,6,8],[6,1,8]])
 print(np.transpose(i))
 #or
 print(i.T)
