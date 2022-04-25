@@ -45,13 +45,20 @@ d=(A@B.T) #OR np.transpose(d)
 y=C.T#or np.transpose(C)
 Y=x@(d+y)
 print(Y)
-'''
+
 
 #TODO5
 m=int(input('So hoc sinh: '))
-for i in range(1,m+1):
-    while x<8:
-        x=random.randint(-10,10)
-
-    print(i)
+l=np.array([1,2,3,4,5,6,7])
+t=np.array([2.2,5,3,6,7,8,9])
+c=np.array([5,6,8,4,2,3,5]) 
+A=np.array([-1,3,7,9,6,1,2])
+tvh=A@l,A@t,A@c
+print('Học sinh có tính cách giống A nhất: '+str(np.max(tvh)))
+'''
+#TODO6
+m=int(input('Nhập số nguyên m: '))
+n=int(input('Nhập số nguyên n: '))
+A=np.random.randint(1,10,(m,n))
+print(A)
 
