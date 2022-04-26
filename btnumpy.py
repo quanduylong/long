@@ -60,5 +60,14 @@ print('Học sinh có tính cách giống A nhất: '+str(np.max(tvh)))
 m=int(input('Nhập số nguyên m: '))
 n=int(input('Nhập số nguyên n: '))
 A=np.random.randint(1,10,(m,n))
-print(A)
+for i in range(1,10):
+    if A.size%i==0:
+        continue
+    else:
+        print(np.max(A,axis=0))
+
+    
+    
+
+
 
