@@ -78,6 +78,21 @@ print ("next")
 #Ma trận nghịch đảo
 v=np.array([[2,5,6],[6,7,8],[6,88,9]],dtype=int)
 print(np.linalg.inv(v))
+
+#Cách lấy cột trong ma trận
+A = np.array([[1, 4, 5, 12], 
+ [-2, 8, 6, 14],
+ [-1, 5, 10, 22]])
+
+print("A[:,0] =",A[:,0]) # Cột đầu tiên
+print("A[:,3] =", A[:,3]) # Cột thứ 4
+print("A[:,-1] =", A[:,-1]) # Cột cuối cùng (Cột thứ 4)
+
+#NỐI MA TRẬN NÀY VS MA TRẬN KHÁC
+A = np.array([[1,20,4],[5,6,8], [15,2,8]])
+B = np.array([[10,11,12],[6,8,4]])
+C= (B.T)
+print('Nối C và A tạo thành shape 3x5\n',np.concatenate((C,A),axis=1))
 '''
 print("*MA TRẬN NÂNG CAO*")
 #thay đổi kích thước ma trận với Reshape
@@ -124,3 +139,37 @@ print(np.mean(t))#Trung bình tổng ma trận
 print(np.mean(t,axis=0))#Trung bình tổng trên cột
 print(np.mean(t,axis=1))#Trung bình tổng trên hàng 
 
+#NHAP MA TRAN
+mt=[[],[],[]]
+def NhapMaTran():
+    for i in range(l):
+        for j in range(c):
+            print ("Phan tu hang",i,"cot",j)
+            pt=int(input(""))
+            mt[i].append(pt)
+
+def InCheoChinh():
+    print ("Duong cheo chinh cua ma tran vua nhap la:")
+    for i in range(l):
+        for j in range(c):
+            if i!=j:
+                mt[i][j]="*"
+    for i in range(l):
+        for j in range(c):
+            print (mt[i][j],'   ',mt[i][j+1],'  ',mt[i][j+2])
+            break        
+print ("MENU\n1.Chon 1 de Nhap vao ma tran.")
+print ("2. Chon 2 de In cac phan tu duong cheo chinh.")
+print ("3. Chon 3 de Ket thuc.\tMoi ban chon")
+ch=0
+while ch!=3:
+    ch=int(input("CHON:"))
+    if ch==1:
+        l=int(input("Nhap so hang:"))
+        c=int(input("Nhap so cot:"))
+        NhapMaTran()
+    elif ch==2:
+        InCheoChinh()
+    else:
+        print("Chon khong hop le, moi chon lai!")
+        main()    
