@@ -44,7 +44,7 @@ print(s)
 b={'ONE': pd.Series([1,2,3,5],index=['a','b','c','e']), 'TWO': pd.Series([1,2,3,4],index=['a','b','c','d'])}
 r=pd.DataFrame(b,index=['a','c','d'])
 print(r)
-
+'''
 #THAO TÁC CHỌN, THÊM, XÓA CỘT
 c={'ONE': pd.Series([1,2,3,4,5,6],index=['a','b','c','d','e','f']),
     'TWO':pd.Series([7,8,9,10,11,12],index=['a','b','c','d','e','f']),
@@ -71,6 +71,4 @@ y=cc.iloc[4]#CHỌN DÒNG THEO VỊ TRÍ NGUYÊN
 print(y)
 y=cc[2:4]#CẮT DÒNG TỪ INDEX 2 DẾN 4
 print(y)
-'''
-excel_file= 'C:\\Users\\Admin\\Downloads\\movies.xls'
-movies=pd.read_excel(excel_file)
+
