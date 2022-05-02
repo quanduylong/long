@@ -102,11 +102,12 @@ for i in a:
     for y in b:
         if i==y:
             print(i,end=',')
+'''           
 #TODO16
 n=int(input())
 m=int(input())
 A=np.arange(n,m+1)
 print(np.where(A%2==0,A,0))
-'''
+
 
 
